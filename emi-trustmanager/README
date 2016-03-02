@@ -1,0 +1,42 @@
+Simple tester client program for the emi-trustmanager binary RPM.
+
+
+REQUIREMENTS
+
+Install the EPEL and OSG repository definitions.  See, e.g.:
+
+https://twiki.opensciencegrid.org/bin/view/Documentation/Release3/YumRepositories
+
+Install the following RPMs:
+
+* java-1.7.0-openjdk
+* java-1.7.0-openjdk-devel
+* yum-plugin-priorities
+* emi-trustmanager
+* log4j (UNTIL emi-trustmanager correctly requires it)
+* bouncycastle (the default security provider???)
+* osg-ca-certs (because testing a real cert requires them)
+
+
+COMPILING
+
+* To build:
+
+    make
+
+* To remove class files:
+
+    make clean
+
+
+RUNNING
+
+Use the little shell script:
+
+    ett
+
+
+TODO
+
+* Initialize log4j to avoid warnings
+* Write real tests!

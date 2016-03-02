@@ -1,0 +1,5 @@
+#!/bin/sh
+
+CLASSPATH=/usr/share/java/log4j.jar:/usr/share/java/bcprov.jar:/usr/share/java/trustmanager.jar:.
+
+java -classpath $CLASSPATH EmiTrustmanagerTester
